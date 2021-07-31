@@ -26,14 +26,13 @@ Product.init({
         validate: {
             isNumeric: true,
 
-        }
-    },
+        }},
     category_id: {
         type: DataTypes.INTEGER,
         references: {
             model: 'categories',
             key: 'id'
-        }, },},
+        },},},
 
         {
             sequelize,
@@ -41,8 +40,7 @@ Product.init({
             freezeTableName: true,
             underscored: true,
             modelName: 'product',
-
-        });
+});
 module.exports = Product;
 
 
